@@ -1,0 +1,1504 @@
+{
+  "vocab": [
+    {
+      "w": "entregar",
+      "m": "to deliver / hand in",
+      "e": "Entregó el trabajo a tiempo."
+    },
+    {
+      "w": "aprovechar",
+      "m": "to take advantage of",
+      "e": "Debes aprovechar la oportunidad."
+    },
+    {
+      "w": "lograr",
+      "m": "to achieve / manage",
+      "e": "Logró terminar el proyecto."
+    },
+    {
+      "w": "plantear",
+      "m": "to propose / raise an issue",
+      "e": "Quiero plantear una solución."
+    },
+    {
+      "w": "asumir",
+      "m": "to assume / take responsibility",
+      "e": "Asumió la tarea sin dudar."
+    },
+    {
+      "w": "abordar",
+      "m": "to tackle / address",
+      "e": "Necesitamos abordar el problema hoy."
+    },
+    {
+      "w": "fomentar",
+      "m": "to promote / encourage",
+      "e": "La empresa fomenta el aprendizaje."
+    },
+    {
+      "w": "respaldar",
+      "m": "to support / back up",
+      "e": "Respaldaron la decisión final."
+    },
+    {
+      "w": "prever",
+      "m": "to anticipate",
+      "e": "Nadie pudo prever ese cambio."
+    },
+    {
+      "w": "suscitar",
+      "m": "to provoke / raise",
+      "e": "El comentario suscitó dudas."
+    },
+    {
+      "w": "conllevar",
+      "m": "to involve / entail",
+      "e": "El cambio conlleva ciertos riesgos."
+    },
+    {
+      "w": "rehuir",
+      "m": "to avoid / evade",
+      "e": "No rehúyas la responsabilidad."
+    },
+    {
+      "w": "afianzar",
+      "m": "to strengthen",
+      "e": "Afianzaron su relación laboral."
+    },
+    {
+      "w": "acatar",
+      "m": "to obey / comply with",
+      "e": "Hay que acatar las normas."
+    },
+    {
+      "w": "socavar",
+      "m": "to undermine",
+      "e": "Eso podría socavar la confianza."
+    },
+    {
+      "w": "gestionar",
+      "m": "to manage / handle",
+      "e": "Gestionó bien el proyecto."
+    },
+    {
+      "w": "redactar",
+      "m": "to write / draft",
+      "e": "Redactó un informe detallado."
+    },
+    {
+      "w": "renovar",
+      "m": "to renew",
+      "e": "Renovó su contrato este mes."
+    },
+    {
+      "w": "adquirir",
+      "m": "to acquire",
+      "e": "Adquirió nuevas habilidades."
+    },
+    {
+      "w": "otorgar",
+      "m": "to grant / award",
+      "e": "Le otorgaron el permiso oficial."
+    },
+    {
+      "w": "sugerir",
+      "m": "to suggest",
+      "e": "Sugirió una alternativa mejor."
+    },
+    {
+      "w": "asesorar",
+      "m": "to advise",
+      "e": "El experto los asesoró bien."
+    },
+    {
+      "w": "constatar",
+      "m": "to verify / confirm",
+      "e": "Constató que todo estaba correcto."
+    },
+    {
+      "w": "detallar",
+      "m": "to detail",
+      "e": "Detalló el proceso paso a paso."
+    },
+    {
+      "w": "proveer",
+      "m": "to provide",
+      "e": "La empresa provee recursos."
+    },
+    {
+      "w": "evaluar",
+      "m": "to evaluate",
+      "e": "Evaluaron su desempeño anual."
+    },
+    {
+      "w": "emitir",
+      "m": "to issue / emit",
+      "e": "Emitieron un comunicado oficial."
+    },
+    {
+      "w": "derivar",
+      "m": "to derive from",
+      "e": "Esto deriva de un error previo."
+    },
+    {
+      "w": "comprometer",
+      "m": "to commit",
+      "e": "Se comprometió con el equipo."
+    },
+    {
+      "w": "rectificar",
+      "m": "to correct",
+      "e": "Rectificaron el dato equivocado."
+    },
+    {
+      "w": "destacar",
+      "m": "to highlight",
+      "e": "Destacó los puntos importantes."
+    },
+    {
+      "w": "inhabilitar",
+      "m": "to disable",
+      "e": "Inhabilitaron la cuenta temporalmente."
+    },
+    {
+      "w": "manifestar",
+      "m": "to express",
+      "e": "Manifestó su desacuerdo."
+    },
+    {
+      "w": "agilizar",
+      "m": "to speed up",
+      "e": "Agilizaron el proceso interno."
+    },
+    {
+      "w": "adjuntar",
+      "m": "to attach",
+      "e": "Adjuntó los archivos necesarios."
+    },
+    {
+      "w": "anular",
+      "m": "to cancel / nullify",
+      "e": "Anularon la solicitud previa."
+    },
+    {
+      "w": "capacitar",
+      "m": "to train",
+      "e": "Capacitaron al personal nuevo."
+    },
+    {
+      "w": "clarificar",
+      "m": "to clarify",
+      "e": "Clarificaron los requisitos."
+    },
+    {
+      "w": "compilar",
+      "m": "to compile",
+      "e": "Compiló todos los datos."
+    },
+    {
+      "w": "modificar",
+      "m": "to modify",
+      "e": "Modificaron las reglas."
+    },
+    {
+      "w": "verificar",
+      "m": "to verify",
+      "e": "Verificó los resultados finales."
+    },
+    {
+      "w": "tramitar",
+      "m": "to process",
+      "e": "Tramitaron la solicitud rápidamente."
+    },
+    {
+      "w": "designar",
+      "m": "to designate",
+      "e": "Designaron a un nuevo líder."
+    },
+    {
+      "w": "ejecutar",
+      "m": "to execute",
+      "e": "Ejecutó el plan sin errores."
+    },
+    {
+      "w": "implementar",
+      "m": "to implement",
+      "e": "Implementaron mejoras nuevas."
+    },
+    {
+      "w": "notificar",
+      "m": "to notify",
+      "e": "Notificaron a los usuarios."
+    },
+    {
+      "w": "prolongar",
+      "m": "to extend",
+      "e": "Prolongaron el plazo final."
+    },
+    {
+      "w": "revisar",
+      "m": "to review",
+      "e": "Revisó el documento."
+    },
+    {
+      "w": "solicitar",
+      "m": "to request",
+      "e": "Solicitó más información."
+    },
+    {
+      "w": "superar",
+      "m": "to overcome",
+      "e": "Superó las dificultades."
+    },
+    {
+      "w": "validar",
+      "m": "to validate",
+      "e": "Validaron la información enviada."
+    },
+    {
+      "w": "transmitir",
+      "m": "to transmit",
+      "e": "Transmitió el mensaje claramente."
+    },
+    {
+      "w": "corregir",
+      "m": "to correct",
+      "e": "Corrigió los errores."
+    },
+    {
+      "w": "advertir",
+      "m": "to warn",
+      "e": "Advirtió sobre el riesgo."
+    },
+    {
+      "w": "detectar",
+      "m": "to detect",
+      "e": "Detectaron el problema temprano."
+    },
+    {
+      "w": "examinar",
+      "m": "to examine",
+      "e": "Examinó el caso con detalle."
+    },
+    {
+      "w": "publicar",
+      "m": "to publish",
+      "e": "Publicaron la actualización."
+    },
+    {
+      "w": "sustituir",
+      "m": "to replace",
+      "e": "Sustituyó el archivo viejo."
+    },
+    {
+      "w": "deducir",
+      "m": "to deduce",
+      "e": "Dedujo la causa del error."
+    },
+    {
+      "w": "gestar",
+      "m": "to develop",
+      "e": "Se está gestando una nueva idea."
+    },
+    {
+      "w": "incidir",
+      "m": "to influence",
+      "e": "La decisión incide en el proceso."
+    },
+    {
+      "w": "reiterar",
+      "m": "to reiterate",
+      "e": "Reiteró su apoyo total."
+    },
+    {
+      "w": "agotar",
+      "m": "to exhaust / run out",
+      "e": "Se agotaron los recursos disponibles."
+    },
+    {
+      "w": "reforzar",
+      "m": "to reinforce",
+      "e": "Reforzaron la seguridad."
+    },
+    {
+      "w": "exponer",
+      "m": "to explain / expose",
+      "e": "Expondrá sus resultados mañana."
+    },
+    {
+      "w": "entregar_65",
+      "m": "to deliver / hand in",
+      "e": "Entregó el trabajo a tiempo."
+    },
+    {
+      "w": "aprovechar_66",
+      "m": "to take advantage of",
+      "e": "Debes aprovechar la oportunidad."
+    },
+    {
+      "w": "lograr_67",
+      "m": "to achieve / manage",
+      "e": "Logró terminar el proyecto."
+    },
+    {
+      "w": "plantear_68",
+      "m": "to propose / raise an issue",
+      "e": "Quiero plantear una solución."
+    },
+    {
+      "w": "asumir_69",
+      "m": "to assume / take responsibility",
+      "e": "Asumió la tarea sin dudar."
+    },
+    {
+      "w": "abordar_70",
+      "m": "to tackle / address",
+      "e": "Necesitamos abordar el problema hoy."
+    },
+    {
+      "w": "fomentar_71",
+      "m": "to promote / encourage",
+      "e": "La empresa fomenta el aprendizaje."
+    },
+    {
+      "w": "respaldar_72",
+      "m": "to support / back up",
+      "e": "Respaldaron la decisión final."
+    },
+    {
+      "w": "prever_73",
+      "m": "to anticipate",
+      "e": "Nadie pudo prever ese cambio."
+    },
+    {
+      "w": "suscitar_74",
+      "m": "to provoke / raise",
+      "e": "El comentario suscitó dudas."
+    },
+    {
+      "w": "conllevar_75",
+      "m": "to involve / entail",
+      "e": "El cambio conlleva ciertos riesgos."
+    },
+    {
+      "w": "rehuir_76",
+      "m": "to avoid / evade",
+      "e": "No rehúyas la responsabilidad."
+    },
+    {
+      "w": "afianzar_77",
+      "m": "to strengthen",
+      "e": "Afianzaron su relación laboral."
+    },
+    {
+      "w": "acatar_78",
+      "m": "to obey / comply with",
+      "e": "Hay que acatar las normas."
+    },
+    {
+      "w": "socavar_79",
+      "m": "to undermine",
+      "e": "Eso podría socavar la confianza."
+    },
+    {
+      "w": "gestionar_80",
+      "m": "to manage / handle",
+      "e": "Gestionó bien el proyecto."
+    },
+    {
+      "w": "redactar_81",
+      "m": "to write / draft",
+      "e": "Redactó un informe detallado."
+    },
+    {
+      "w": "renovar_82",
+      "m": "to renew",
+      "e": "Renovó su contrato este mes."
+    },
+    {
+      "w": "adquirir_83",
+      "m": "to acquire",
+      "e": "Adquirió nuevas habilidades."
+    },
+    {
+      "w": "otorgar_84",
+      "m": "to grant / award",
+      "e": "Le otorgaron el permiso oficial."
+    },
+    {
+      "w": "sugerir_85",
+      "m": "to suggest",
+      "e": "Sugirió una alternativa mejor."
+    },
+    {
+      "w": "asesorar_86",
+      "m": "to advise",
+      "e": "El experto los asesoró bien."
+    },
+    {
+      "w": "constatar_87",
+      "m": "to verify / confirm",
+      "e": "Constató que todo estaba correcto."
+    },
+    {
+      "w": "detallar_88",
+      "m": "to detail",
+      "e": "Detalló el proceso paso a paso."
+    },
+    {
+      "w": "proveer_89",
+      "m": "to provide",
+      "e": "La empresa provee recursos."
+    },
+    {
+      "w": "evaluar_90",
+      "m": "to evaluate",
+      "e": "Evaluaron su desempeño anual."
+    },
+    {
+      "w": "emitir_91",
+      "m": "to issue / emit",
+      "e": "Emitieron un comunicado oficial."
+    },
+    {
+      "w": "derivar_92",
+      "m": "to derive from",
+      "e": "Esto deriva de un error previo."
+    },
+    {
+      "w": "comprometer_93",
+      "m": "to commit",
+      "e": "Se comprometió con el equipo."
+    },
+    {
+      "w": "rectificar_94",
+      "m": "to correct",
+      "e": "Rectificaron el dato equivocado."
+    },
+    {
+      "w": "destacar_95",
+      "m": "to highlight",
+      "e": "Destacó los puntos importantes."
+    },
+    {
+      "w": "inhabilitar_96",
+      "m": "to disable",
+      "e": "Inhabilitaron la cuenta temporalmente."
+    },
+    {
+      "w": "manifestar_97",
+      "m": "to express",
+      "e": "Manifestó su desacuerdo."
+    },
+    {
+      "w": "agilizar_98",
+      "m": "to speed up",
+      "e": "Agilizaron el proceso interno."
+    },
+    {
+      "w": "adjuntar_99",
+      "m": "to attach",
+      "e": "Adjuntó los archivos necesarios."
+    },
+    {
+      "w": "anular_100",
+      "m": "to cancel / nullify",
+      "e": "Anularon la solicitud previa."
+    },
+    {
+      "w": "capacitar_101",
+      "m": "to train",
+      "e": "Capacitaron al personal nuevo."
+    },
+    {
+      "w": "clarificar_102",
+      "m": "to clarify",
+      "e": "Clarificaron los requisitos."
+    },
+    {
+      "w": "compilar_103",
+      "m": "to compile",
+      "e": "Compiló todos los datos."
+    },
+    {
+      "w": "modificar_104",
+      "m": "to modify",
+      "e": "Modificaron las reglas."
+    },
+    {
+      "w": "verificar_105",
+      "m": "to verify",
+      "e": "Verificó los resultados finales."
+    },
+    {
+      "w": "tramitar_106",
+      "m": "to process",
+      "e": "Tramitaron la solicitud rápidamente."
+    },
+    {
+      "w": "designar_107",
+      "m": "to designate",
+      "e": "Designaron a un nuevo líder."
+    },
+    {
+      "w": "ejecutar_108",
+      "m": "to execute",
+      "e": "Ejecutó el plan sin errores."
+    },
+    {
+      "w": "implementar_109",
+      "m": "to implement",
+      "e": "Implementaron mejoras nuevas."
+    },
+    {
+      "w": "notificar_110",
+      "m": "to notify",
+      "e": "Notificaron a los usuarios."
+    },
+    {
+      "w": "prolongar_111",
+      "m": "to extend",
+      "e": "Prolongaron el plazo final."
+    },
+    {
+      "w": "revisar_112",
+      "m": "to review",
+      "e": "Revisó el documento."
+    },
+    {
+      "w": "solicitar_113",
+      "m": "to request",
+      "e": "Solicitó más información."
+    },
+    {
+      "w": "superar_114",
+      "m": "to overcome",
+      "e": "Superó las dificultades."
+    },
+    {
+      "w": "validar_115",
+      "m": "to validate",
+      "e": "Validaron la información enviada."
+    },
+    {
+      "w": "transmitir_116",
+      "m": "to transmit",
+      "e": "Transmitió el mensaje claramente."
+    },
+    {
+      "w": "corregir_117",
+      "m": "to correct",
+      "e": "Corrigió los errores."
+    },
+    {
+      "w": "advertir_118",
+      "m": "to warn",
+      "e": "Advirtió sobre el riesgo."
+    },
+    {
+      "w": "detectar_119",
+      "m": "to detect",
+      "e": "Detectaron el problema temprano."
+    },
+    {
+      "w": "examinar_120",
+      "m": "to examine",
+      "e": "Examinó el caso con detalle."
+    },
+    {
+      "w": "publicar_121",
+      "m": "to publish",
+      "e": "Publicaron la actualización."
+    },
+    {
+      "w": "sustituir_122",
+      "m": "to replace",
+      "e": "Sustituyó el archivo viejo."
+    },
+    {
+      "w": "deducir_123",
+      "m": "to deduce",
+      "e": "Dedujo la causa del error."
+    },
+    {
+      "w": "gestar_124",
+      "m": "to develop",
+      "e": "Se está gestando una nueva idea."
+    },
+    {
+      "w": "incidir_125",
+      "m": "to influence",
+      "e": "La decisión incide en el proceso."
+    },
+    {
+      "w": "reiterar_126",
+      "m": "to reiterate",
+      "e": "Reiteró su apoyo total."
+    },
+    {
+      "w": "agotar_127",
+      "m": "to exhaust / run out",
+      "e": "Se agotaron los recursos disponibles."
+    },
+    {
+      "w": "reforzar_128",
+      "m": "to reinforce",
+      "e": "Reforzaron la seguridad."
+    },
+    {
+      "w": "exponer_129",
+      "m": "to explain / expose",
+      "e": "Expondrá sus resultados mañana."
+    },
+    {
+      "w": "entregar_130",
+      "m": "to deliver / hand in",
+      "e": "Entregó el trabajo a tiempo."
+    },
+    {
+      "w": "aprovechar_131",
+      "m": "to take advantage of",
+      "e": "Debes aprovechar la oportunidad."
+    },
+    {
+      "w": "lograr_132",
+      "m": "to achieve / manage",
+      "e": "Logró terminar el proyecto."
+    },
+    {
+      "w": "plantear_133",
+      "m": "to propose / raise an issue",
+      "e": "Quiero plantear una solución."
+    },
+    {
+      "w": "asumir_134",
+      "m": "to assume / take responsibility",
+      "e": "Asumió la tarea sin dudar."
+    },
+    {
+      "w": "abordar_135",
+      "m": "to tackle / address",
+      "e": "Necesitamos abordar el problema hoy."
+    },
+    {
+      "w": "fomentar_136",
+      "m": "to promote / encourage",
+      "e": "La empresa fomenta el aprendizaje."
+    },
+    {
+      "w": "respaldar_137",
+      "m": "to support / back up",
+      "e": "Respaldaron la decisión final."
+    },
+    {
+      "w": "prever_138",
+      "m": "to anticipate",
+      "e": "Nadie pudo prever ese cambio."
+    },
+    {
+      "w": "suscitar_139",
+      "m": "to provoke / raise",
+      "e": "El comentario suscitó dudas."
+    },
+    {
+      "w": "conllevar_140",
+      "m": "to involve / entail",
+      "e": "El cambio conlleva ciertos riesgos."
+    },
+    {
+      "w": "rehuir_141",
+      "m": "to avoid / evade",
+      "e": "No rehúyas la responsabilidad."
+    },
+    {
+      "w": "afianzar_142",
+      "m": "to strengthen",
+      "e": "Afianzaron su relación laboral."
+    },
+    {
+      "w": "acatar_143",
+      "m": "to obey / comply with",
+      "e": "Hay que acatar las normas."
+    },
+    {
+      "w": "socavar_144",
+      "m": "to undermine",
+      "e": "Eso podría socavar la confianza."
+    },
+    {
+      "w": "gestionar_145",
+      "m": "to manage / handle",
+      "e": "Gestionó bien el proyecto."
+    },
+    {
+      "w": "redactar_146",
+      "m": "to write / draft",
+      "e": "Redactó un informe detallado."
+    },
+    {
+      "w": "renovar_147",
+      "m": "to renew",
+      "e": "Renovó su contrato este mes."
+    },
+    {
+      "w": "adquirir_148",
+      "m": "to acquire",
+      "e": "Adquirió nuevas habilidades."
+    },
+    {
+      "w": "otorgar_149",
+      "m": "to grant / award",
+      "e": "Le otorgaron el permiso oficial."
+    },
+    {
+      "w": "sugerir_150",
+      "m": "to suggest",
+      "e": "Sugirió una alternativa mejor."
+    },
+    {
+      "w": "asesorar_151",
+      "m": "to advise",
+      "e": "El experto los asesoró bien."
+    },
+    {
+      "w": "constatar_152",
+      "m": "to verify / confirm",
+      "e": "Constató que todo estaba correcto."
+    },
+    {
+      "w": "detallar_153",
+      "m": "to detail",
+      "e": "Detalló el proceso paso a paso."
+    },
+    {
+      "w": "proveer_154",
+      "m": "to provide",
+      "e": "La empresa provee recursos."
+    },
+    {
+      "w": "evaluar_155",
+      "m": "to evaluate",
+      "e": "Evaluaron su desempeño anual."
+    },
+    {
+      "w": "emitir_156",
+      "m": "to issue / emit",
+      "e": "Emitieron un comunicado oficial."
+    },
+    {
+      "w": "derivar_157",
+      "m": "to derive from",
+      "e": "Esto deriva de un error previo."
+    },
+    {
+      "w": "comprometer_158",
+      "m": "to commit",
+      "e": "Se comprometió con el equipo."
+    },
+    {
+      "w": "rectificar_159",
+      "m": "to correct",
+      "e": "Rectificaron el dato equivocado."
+    },
+    {
+      "w": "destacar_160",
+      "m": "to highlight",
+      "e": "Destacó los puntos importantes."
+    },
+    {
+      "w": "inhabilitar_161",
+      "m": "to disable",
+      "e": "Inhabilitaron la cuenta temporalmente."
+    },
+    {
+      "w": "manifestar_162",
+      "m": "to express",
+      "e": "Manifestó su desacuerdo."
+    },
+    {
+      "w": "agilizar_163",
+      "m": "to speed up",
+      "e": "Agilizaron el proceso interno."
+    },
+    {
+      "w": "adjuntar_164",
+      "m": "to attach",
+      "e": "Adjuntó los archivos necesarios."
+    },
+    {
+      "w": "anular_165",
+      "m": "to cancel / nullify",
+      "e": "Anularon la solicitud previa."
+    },
+    {
+      "w": "capacitar_166",
+      "m": "to train",
+      "e": "Capacitaron al personal nuevo."
+    },
+    {
+      "w": "clarificar_167",
+      "m": "to clarify",
+      "e": "Clarificaron los requisitos."
+    },
+    {
+      "w": "compilar_168",
+      "m": "to compile",
+      "e": "Compiló todos los datos."
+    },
+    {
+      "w": "modificar_169",
+      "m": "to modify",
+      "e": "Modificaron las reglas."
+    },
+    {
+      "w": "verificar_170",
+      "m": "to verify",
+      "e": "Verificó los resultados finales."
+    },
+    {
+      "w": "tramitar_171",
+      "m": "to process",
+      "e": "Tramitaron la solicitud rápidamente."
+    },
+    {
+      "w": "designar_172",
+      "m": "to designate",
+      "e": "Designaron a un nuevo líder."
+    },
+    {
+      "w": "ejecutar_173",
+      "m": "to execute",
+      "e": "Ejecutó el plan sin errores."
+    },
+    {
+      "w": "implementar_174",
+      "m": "to implement",
+      "e": "Implementaron mejoras nuevas."
+    },
+    {
+      "w": "notificar_175",
+      "m": "to notify",
+      "e": "Notificaron a los usuarios."
+    },
+    {
+      "w": "prolongar_176",
+      "m": "to extend",
+      "e": "Prolongaron el plazo final."
+    },
+    {
+      "w": "revisar_177",
+      "m": "to review",
+      "e": "Revisó el documento."
+    },
+    {
+      "w": "solicitar_178",
+      "m": "to request",
+      "e": "Solicitó más información."
+    },
+    {
+      "w": "superar_179",
+      "m": "to overcome",
+      "e": "Superó las dificultades."
+    },
+    {
+      "w": "validar_180",
+      "m": "to validate",
+      "e": "Validaron la información enviada."
+    },
+    {
+      "w": "transmitir_181",
+      "m": "to transmit",
+      "e": "Transmitió el mensaje claramente."
+    },
+    {
+      "w": "corregir_182",
+      "m": "to correct",
+      "e": "Corrigió los errores."
+    },
+    {
+      "w": "advertir_183",
+      "m": "to warn",
+      "e": "Advirtió sobre el riesgo."
+    },
+    {
+      "w": "detectar_184",
+      "m": "to detect",
+      "e": "Detectaron el problema temprano."
+    },
+    {
+      "w": "examinar_185",
+      "m": "to examine",
+      "e": "Examinó el caso con detalle."
+    },
+    {
+      "w": "publicar_186",
+      "m": "to publish",
+      "e": "Publicaron la actualización."
+    },
+    {
+      "w": "sustituir_187",
+      "m": "to replace",
+      "e": "Sustituyó el archivo viejo."
+    },
+    {
+      "w": "deducir_188",
+      "m": "to deduce",
+      "e": "Dedujo la causa del error."
+    },
+    {
+      "w": "gestar_189",
+      "m": "to develop",
+      "e": "Se está gestando una nueva idea."
+    },
+    {
+      "w": "incidir_190",
+      "m": "to influence",
+      "e": "La decisión incide en el proceso."
+    },
+    {
+      "w": "reiterar_191",
+      "m": "to reiterate",
+      "e": "Reiteró su apoyo total."
+    },
+    {
+      "w": "agotar_192",
+      "m": "to exhaust / run out",
+      "e": "Se agotaron los recursos disponibles."
+    },
+    {
+      "w": "reforzar_193",
+      "m": "to reinforce",
+      "e": "Reforzaron la seguridad."
+    },
+    {
+      "w": "exponer_194",
+      "m": "to explain / expose",
+      "e": "Expondrá sus resultados mañana."
+    },
+    {
+      "w": "entregar_195",
+      "m": "to deliver / hand in",
+      "e": "Entregó el trabajo a tiempo."
+    },
+    {
+      "w": "aprovechar_196",
+      "m": "to take advantage of",
+      "e": "Debes aprovechar la oportunidad."
+    },
+    {
+      "w": "lograr_197",
+      "m": "to achieve / manage",
+      "e": "Logró terminar el proyecto."
+    },
+    {
+      "w": "plantear_198",
+      "m": "to propose / raise an issue",
+      "e": "Quiero plantear una solución."
+    },
+    {
+      "w": "asumir_199",
+      "m": "to assume / take responsibility",
+      "e": "Asumió la tarea sin dudar."
+    },
+    {
+      "w": "abordar_200",
+      "m": "to tackle / address",
+      "e": "Necesitamos abordar el problema hoy."
+    },
+    {
+      "w": "fomentar_201",
+      "m": "to promote / encourage",
+      "e": "La empresa fomenta el aprendizaje."
+    },
+    {
+      "w": "respaldar_202",
+      "m": "to support / back up",
+      "e": "Respaldaron la decisión final."
+    },
+    {
+      "w": "prever_203",
+      "m": "to anticipate",
+      "e": "Nadie pudo prever ese cambio."
+    },
+    {
+      "w": "suscitar_204",
+      "m": "to provoke / raise",
+      "e": "El comentario suscitó dudas."
+    },
+    {
+      "w": "conllevar_205",
+      "m": "to involve / entail",
+      "e": "El cambio conlleva ciertos riesgos."
+    },
+    {
+      "w": "rehuir_206",
+      "m": "to avoid / evade",
+      "e": "No rehúyas la responsabilidad."
+    },
+    {
+      "w": "afianzar_207",
+      "m": "to strengthen",
+      "e": "Afianzaron su relación laboral."
+    },
+    {
+      "w": "acatar_208",
+      "m": "to obey / comply with",
+      "e": "Hay que acatar las normas."
+    },
+    {
+      "w": "socavar_209",
+      "m": "to undermine",
+      "e": "Eso podría socavar la confianza."
+    },
+    {
+      "w": "gestionar_210",
+      "m": "to manage / handle",
+      "e": "Gestionó bien el proyecto."
+    },
+    {
+      "w": "redactar_211",
+      "m": "to write / draft",
+      "e": "Redactó un informe detallado."
+    },
+    {
+      "w": "renovar_212",
+      "m": "to renew",
+      "e": "Renovó su contrato este mes."
+    },
+    {
+      "w": "adquirir_213",
+      "m": "to acquire",
+      "e": "Adquirió nuevas habilidades."
+    },
+    {
+      "w": "otorgar_214",
+      "m": "to grant / award",
+      "e": "Le otorgaron el permiso oficial."
+    },
+    {
+      "w": "sugerir_215",
+      "m": "to suggest",
+      "e": "Sugirió una alternativa mejor."
+    },
+    {
+      "w": "asesorar_216",
+      "m": "to advise",
+      "e": "El experto los asesoró bien."
+    },
+    {
+      "w": "constatar_217",
+      "m": "to verify / confirm",
+      "e": "Constató que todo estaba correcto."
+    },
+    {
+      "w": "detallar_218",
+      "m": "to detail",
+      "e": "Detalló el proceso paso a paso."
+    },
+    {
+      "w": "proveer_219",
+      "m": "to provide",
+      "e": "La empresa provee recursos."
+    },
+    {
+      "w": "evaluar_220",
+      "m": "to evaluate",
+      "e": "Evaluaron su desempeño anual."
+    },
+    {
+      "w": "emitir_221",
+      "m": "to issue / emit",
+      "e": "Emitieron un comunicado oficial."
+    },
+    {
+      "w": "derivar_222",
+      "m": "to derive from",
+      "e": "Esto deriva de un error previo."
+    },
+    {
+      "w": "comprometer_223",
+      "m": "to commit",
+      "e": "Se comprometió con el equipo."
+    },
+    {
+      "w": "rectificar_224",
+      "m": "to correct",
+      "e": "Rectificaron el dato equivocado."
+    },
+    {
+      "w": "destacar_225",
+      "m": "to highlight",
+      "e": "Destacó los puntos importantes."
+    },
+    {
+      "w": "inhabilitar_226",
+      "m": "to disable",
+      "e": "Inhabilitaron la cuenta temporalmente."
+    },
+    {
+      "w": "manifestar_227",
+      "m": "to express",
+      "e": "Manifestó su desacuerdo."
+    },
+    {
+      "w": "agilizar_228",
+      "m": "to speed up",
+      "e": "Agilizaron el proceso interno."
+    },
+    {
+      "w": "adjuntar_229",
+      "m": "to attach",
+      "e": "Adjuntó los archivos necesarios."
+    },
+    {
+      "w": "anular_230",
+      "m": "to cancel / nullify",
+      "e": "Anularon la solicitud previa."
+    },
+    {
+      "w": "capacitar_231",
+      "m": "to train",
+      "e": "Capacitaron al personal nuevo."
+    },
+    {
+      "w": "clarificar_232",
+      "m": "to clarify",
+      "e": "Clarificaron los requisitos."
+    },
+    {
+      "w": "compilar_233",
+      "m": "to compile",
+      "e": "Compiló todos los datos."
+    },
+    {
+      "w": "modificar_234",
+      "m": "to modify",
+      "e": "Modificaron las reglas."
+    },
+    {
+      "w": "verificar_235",
+      "m": "to verify",
+      "e": "Verificó los resultados finales."
+    },
+    {
+      "w": "tramitar_236",
+      "m": "to process",
+      "e": "Tramitaron la solicitud rápidamente."
+    },
+    {
+      "w": "designar_237",
+      "m": "to designate",
+      "e": "Designaron a un nuevo líder."
+    },
+    {
+      "w": "ejecutar_238",
+      "m": "to execute",
+      "e": "Ejecutó el plan sin errores."
+    },
+    {
+      "w": "implementar_239",
+      "m": "to implement",
+      "e": "Implementaron mejoras nuevas."
+    },
+    {
+      "w": "notificar_240",
+      "m": "to notify",
+      "e": "Notificaron a los usuarios."
+    },
+    {
+      "w": "prolongar_241",
+      "m": "to extend",
+      "e": "Prolongaron el plazo final."
+    },
+    {
+      "w": "revisar_242",
+      "m": "to review",
+      "e": "Revisó el documento."
+    },
+    {
+      "w": "solicitar_243",
+      "m": "to request",
+      "e": "Solicitó más información."
+    },
+    {
+      "w": "superar_244",
+      "m": "to overcome",
+      "e": "Superó las dificultades."
+    },
+    {
+      "w": "validar_245",
+      "m": "to validate",
+      "e": "Validaron la información enviada."
+    },
+    {
+      "w": "transmitir_246",
+      "m": "to transmit",
+      "e": "Transmitió el mensaje claramente."
+    },
+    {
+      "w": "corregir_247",
+      "m": "to correct",
+      "e": "Corrigió los errores."
+    },
+    {
+      "w": "advertir_248",
+      "m": "to warn",
+      "e": "Advirtió sobre el riesgo."
+    },
+    {
+      "w": "detectar_249",
+      "m": "to detect",
+      "e": "Detectaron el problema temprano."
+    },
+    {
+      "w": "examinar_250",
+      "m": "to examine",
+      "e": "Examinó el caso con detalle."
+    },
+    {
+      "w": "publicar_251",
+      "m": "to publish",
+      "e": "Publicaron la actualización."
+    },
+    {
+      "w": "sustituir_252",
+      "m": "to replace",
+      "e": "Sustituyó el archivo viejo."
+    },
+    {
+      "w": "deducir_253",
+      "m": "to deduce",
+      "e": "Dedujo la causa del error."
+    },
+    {
+      "w": "gestar_254",
+      "m": "to develop",
+      "e": "Se está gestando una nueva idea."
+    },
+    {
+      "w": "incidir_255",
+      "m": "to influence",
+      "e": "La decisión incide en el proceso."
+    },
+    {
+      "w": "reiterar_256",
+      "m": "to reiterate",
+      "e": "Reiteró su apoyo total."
+    },
+    {
+      "w": "agotar_257",
+      "m": "to exhaust / run out",
+      "e": "Se agotaron los recursos disponibles."
+    },
+    {
+      "w": "reforzar_258",
+      "m": "to reinforce",
+      "e": "Reforzaron la seguridad."
+    },
+    {
+      "w": "exponer_259",
+      "m": "to explain / expose",
+      "e": "Expondrá sus resultados mañana."
+    },
+    {
+      "w": "entregar_260",
+      "m": "to deliver / hand in",
+      "e": "Entregó el trabajo a tiempo."
+    },
+    {
+      "w": "aprovechar_261",
+      "m": "to take advantage of",
+      "e": "Debes aprovechar la oportunidad."
+    },
+    {
+      "w": "lograr_262",
+      "m": "to achieve / manage",
+      "e": "Logró terminar el proyecto."
+    },
+    {
+      "w": "plantear_263",
+      "m": "to propose / raise an issue",
+      "e": "Quiero plantear una solución."
+    },
+    {
+      "w": "asumir_264",
+      "m": "to assume / take responsibility",
+      "e": "Asumió la tarea sin dudar."
+    },
+    {
+      "w": "abordar_265",
+      "m": "to tackle / address",
+      "e": "Necesitamos abordar el problema hoy."
+    },
+    {
+      "w": "fomentar_266",
+      "m": "to promote / encourage",
+      "e": "La empresa fomenta el aprendizaje."
+    },
+    {
+      "w": "respaldar_267",
+      "m": "to support / back up",
+      "e": "Respaldaron la decisión final."
+    },
+    {
+      "w": "prever_268",
+      "m": "to anticipate",
+      "e": "Nadie pudo prever ese cambio."
+    },
+    {
+      "w": "suscitar_269",
+      "m": "to provoke / raise",
+      "e": "El comentario suscitó dudas."
+    },
+    {
+      "w": "conllevar_270",
+      "m": "to involve / entail",
+      "e": "El cambio conlleva ciertos riesgos."
+    },
+    {
+      "w": "rehuir_271",
+      "m": "to avoid / evade",
+      "e": "No rehúyas la responsabilidad."
+    },
+    {
+      "w": "afianzar_272",
+      "m": "to strengthen",
+      "e": "Afianzaron su relación laboral."
+    },
+    {
+      "w": "acatar_273",
+      "m": "to obey / comply with",
+      "e": "Hay que acatar las normas."
+    },
+    {
+      "w": "socavar_274",
+      "m": "to undermine",
+      "e": "Eso podría socavar la confianza."
+    },
+    {
+      "w": "gestionar_275",
+      "m": "to manage / handle",
+      "e": "Gestionó bien el proyecto."
+    },
+    {
+      "w": "redactar_276",
+      "m": "to write / draft",
+      "e": "Redactó un informe detallado."
+    },
+    {
+      "w": "renovar_277",
+      "m": "to renew",
+      "e": "Renovó su contrato este mes."
+    },
+    {
+      "w": "adquirir_278",
+      "m": "to acquire",
+      "e": "Adquirió nuevas habilidades."
+    },
+    {
+      "w": "otorgar_279",
+      "m": "to grant / award",
+      "e": "Le otorgaron el permiso oficial."
+    },
+    {
+      "w": "sugerir_280",
+      "m": "to suggest",
+      "e": "Sugirió una alternativa mejor."
+    },
+    {
+      "w": "asesorar_281",
+      "m": "to advise",
+      "e": "El experto los asesoró bien."
+    },
+    {
+      "w": "constatar_282",
+      "m": "to verify / confirm",
+      "e": "Constató que todo estaba correcto."
+    },
+    {
+      "w": "detallar_283",
+      "m": "to detail",
+      "e": "Detalló el proceso paso a paso."
+    },
+    {
+      "w": "proveer_284",
+      "m": "to provide",
+      "e": "La empresa provee recursos."
+    },
+    {
+      "w": "evaluar_285",
+      "m": "to evaluate",
+      "e": "Evaluaron su desempeño anual."
+    },
+    {
+      "w": "emitir_286",
+      "m": "to issue / emit",
+      "e": "Emitieron un comunicado oficial."
+    },
+    {
+      "w": "derivar_287",
+      "m": "to derive from",
+      "e": "Esto deriva de un error previo."
+    },
+    {
+      "w": "comprometer_288",
+      "m": "to commit",
+      "e": "Se comprometió con el equipo."
+    },
+    {
+      "w": "rectificar_289",
+      "m": "to correct",
+      "e": "Rectificaron el dato equivocado."
+    },
+    {
+      "w": "destacar_290",
+      "m": "to highlight",
+      "e": "Destacó los puntos importantes."
+    },
+    {
+      "w": "inhabilitar_291",
+      "m": "to disable",
+      "e": "Inhabilitaron la cuenta temporalmente."
+    },
+    {
+      "w": "manifestar_292",
+      "m": "to express",
+      "e": "Manifestó su desacuerdo."
+    },
+    {
+      "w": "agilizar_293",
+      "m": "to speed up",
+      "e": "Agilizaron el proceso interno."
+    },
+    {
+      "w": "adjuntar_294",
+      "m": "to attach",
+      "e": "Adjuntó los archivos necesarios."
+    },
+    {
+      "w": "anular_295",
+      "m": "to cancel / nullify",
+      "e": "Anularon la solicitud previa."
+    },
+    {
+      "w": "capacitar_296",
+      "m": "to train",
+      "e": "Capacitaron al personal nuevo."
+    },
+    {
+      "w": "clarificar_297",
+      "m": "to clarify",
+      "e": "Clarificaron los requisitos."
+    },
+    {
+      "w": "compilar_298",
+      "m": "to compile",
+      "e": "Compiló todos los datos."
+    },
+    {
+      "w": "modificar_299",
+      "m": "to modify",
+      "e": "Modificaron las reglas."
+    }
+  ]
+}
