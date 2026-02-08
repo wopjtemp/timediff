@@ -1,0 +1,475 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Time Difference</title>
+
+  <style>
+    :root{
+      /* Light Pink + White theme (subtle) */
+      --bg: #fff7fb;
+      --card: rgba(255,255,255,0.92);
+      --card2: rgba(255,255,255,0.84);
+      --border: rgba(220, 160, 190, 0.32);
+      --text: rgba(25, 15, 22, 0.92);
+      --muted: rgba(25, 15, 22, 0.60);
+      --muted2: rgba(25, 15, 22, 0.46);
+      --accent: #ff5fa2;
+      --error: #e11d48;
+      --shadow: 0 18px 60px rgba(60, 10, 35, 0.10);
+      --radius: 18px;
+
+      --field-bg: rgba(255, 255, 255, 0.78);
+      --field-bg2: rgba(255, 240, 248, 0.60);
+      --ring: rgba(255, 95, 162, 0.22);
+    }
+
+    * { box-sizing: border-box; }
+
+    body{
+      margin:0;
+      min-height: 100dvh;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      padding: 18px 14px;
+
+      /* ✅ background: less aggressive gradients */
+      background:
+        radial-gradient(900px 520px at 18% 10%, rgba(255, 95, 162, 0.08), transparent 62%),
+        radial-gradient(760px 520px at 82% 18%, rgba(255, 179, 211, 0.10), transparent 64%),
+        linear-gradient(180deg, #fff3f8, var(--bg));
+
+      color: var(--text);
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      line-height: 1.35;
+    }
+
+    .app{ width: min(780px, 100%); }
+
+    .header{
+      display:flex;
+      gap: 14px;
+      align-items:flex-start;
+      justify-content:space-between;
+      margin-bottom: 14px;
+    }
+
+    .title-wrap{
+      display:flex;
+      flex-direction:column;
+      gap: 6px;
+    }
+
+    h1{
+      margin:0;
+      font-size: 22px;
+      letter-spacing: 0.2px;
+      color: rgba(25,15,22,0.92);
+    }
+
+    .subtitle{
+      margin:0;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .card{
+      background: linear-gradient(180deg, var(--card), var(--card2));
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      overflow:hidden;
+      backdrop-filter: blur(6px);
+    }
+
+    .card-body{ padding: 18px; }
+
+    .row{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+    }
+
+    .field{
+      display:flex;
+      flex-direction:column;
+      gap: 8px;
+      padding: 14px;
+      border-radius: 16px;
+      border: 1px solid rgba(220, 160, 190, 0.30);
+      background: linear-gradient(180deg, var(--field-bg), var(--field-bg2));
+    }
+
+    .label{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap: 10px;
+      color: rgba(25, 15, 22, 0.78);
+      font-size: 12px;
+    }
+
+    .chip{
+      font-size: 11px;
+      color: rgba(25, 15, 22, 0.58);
+      border: 1px solid rgba(255, 95, 162, 0.22);
+      padding: 3px 8px;
+      border-radius: 999px;
+      background: rgba(255, 95, 162, 0.06);
+    }
+
+    input{
+      width:100%;
+      padding: 12px 12px;
+      border-radius: 12px;
+      border: 1px solid rgba(220, 160, 190, 0.42);
+      background: rgba(255,255,255,0.96);
+      color: rgba(25, 15, 22, 0.92);
+      outline: none;
+      font-size: 16px;
+      letter-spacing: 0.6px;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono","Courier New", monospace;
+      transition: border-color .15s ease, box-shadow .15s ease, background .15s ease;
+    }
+
+    input:focus{
+      border-color: rgba(255, 95, 162, 0.70);
+      box-shadow: 0 0 0 5px var(--ring);
+      background: rgba(255,255,255,0.99);
+    }
+
+    .result{
+      margin-top: 14px;
+      padding: 14px;
+      border-radius: 16px;
+      border: 1px solid rgba(220, 160, 190, 0.30);
+      background: linear-gradient(180deg, rgba(255,255,255,0.82), rgba(255,242,249,0.70));
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap: 12px;
+    }
+
+    .result-left{
+      display:flex;
+      flex-direction:column;
+      gap: 4px;
+      min-width: 0;
+    }
+
+    .result-title{
+      font-size: 12px;
+      color: rgba(25, 15, 22, 0.62);
+      margin:0;
+    }
+
+    .diff-line{
+      display:flex;
+      align-items:baseline;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono","Courier New", monospace;
+    }
+
+    .diff-main{
+      font-size: 24px;
+      letter-spacing: 1px;
+      color: rgba(25, 15, 22, 0.92);
+    }
+
+    .diff-suffix{
+      font-size: 17px;
+      opacity: 0.92;
+      margin-left: 10px;
+      letter-spacing: 0.2px;
+      flex: 0 0 auto;
+    }
+
+    .lag-none{
+      color: var(--error);
+      font-weight: 700;
+      opacity: 1;
+    }
+
+    .lag-yes{
+      color: rgba(25, 15, 22, 0.72);
+      font-weight: 600;
+    }
+
+    .report-msg{
+      display:none;
+      font-size: 11px;
+      color: rgba(25, 15, 22, 0.46);
+      margin-top: 4px;
+    }
+
+    .btn{
+      appearance:none;
+      border: 1px solid rgba(255, 95, 162, 0.32);
+      background: linear-gradient(180deg, rgba(255, 95, 162, 0.14), rgba(255, 95, 162, 0.08));
+      color: rgba(25, 15, 22, 0.86);
+      padding: 10px 12px;
+      border-radius: 12px;
+      cursor: pointer;
+      font-size: 12px;
+      display:inline-flex;
+      align-items:center;
+      gap: 8px;
+      transition: transform .05s ease, border-color .15s ease, box-shadow .15s ease, background .15s ease;
+      white-space: nowrap;
+    }
+
+    .btn:hover{
+      border-color: rgba(255, 95, 162, 0.52);
+      background: linear-gradient(180deg, rgba(255, 95, 162, 0.20), rgba(255, 95, 162, 0.12));
+      box-shadow: 0 10px 22px rgba(255, 95, 162, 0.08);
+    }
+    .btn:active{ transform: translateY(1px); }
+    .btn:focus{
+      outline:none;
+      box-shadow: 0 0 0 5px var(--ring);
+      border-color: rgba(255, 95, 162, 0.66);
+    }
+    .btn[disabled]{ opacity: 0.45; cursor: not-allowed; }
+
+    .toast{
+      font-size: 12px;
+      color: rgba(25, 15, 22, 0.55);
+      margin-top: 6px;
+      display:none;
+    }
+
+    .error{
+      margin-top: 10px;
+      color: rgba(25, 15, 22, 0.90);
+      background: rgba(225, 29, 72, 0.10);
+      border: 1px solid rgba(225, 29, 72, 0.22);
+      padding: 9px 10px;
+      border-radius: 14px;
+      display:none;
+      font-size: 12px;
+    }
+
+    .help{
+      margin-top: 12px;
+      color: var(--muted2);
+      font-size: 12px;
+      display:flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      align-items:center;
+      justify-content:space-between;
+    }
+
+    .kbd{
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono","Courier New", monospace;
+      padding: 2px 6px;
+      border-radius: 8px;
+      border: 1px solid rgba(255, 95, 162, 0.18);
+      background: rgba(255, 95, 162, 0.06);
+      color: rgba(25, 15, 22, 0.64);
+    }
+
+    .madeby{
+      position: fixed;
+      right: 10px;
+      bottom: 8px;
+      font-size: 9px;
+      color: rgba(25, 15, 22, 0.22);
+      letter-spacing: 0.2px;
+      user-select: none;
+      pointer-events: none;
+    }
+
+    @media (max-width: 640px){
+      body{ padding: 12px 10px; }
+      .row{ grid-template-columns: 1fr; }
+      .diff-main{ font-size: 22px; }
+      .diff-suffix{ font-size: 16px; }
+      .card-body{ padding: 16px; }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="app">
+    <div class="header">
+      <div class="title-wrap">
+        <h1>Time Difference</h1>
+        <p class="subtitle">Instant absolute difference + Click "copy" for QC sheet</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-body">
+        <div class="row">
+          <div class="field">
+            <div class="label"><span>Time 1</span><span class="chip">HH:MM:SS</span></div>
+            <input id="t1" placeholder="00:00:00" value="00:00:00" autocomplete="off" />
+          </div>
+
+          <div class="field">
+            <div class="label"><span>Time 2</span><span class="chip">HH:MM:SS</span></div>
+            <input id="t2" placeholder="00:00:00" value="00:00:00" autocomplete="off" />
+          </div>
+        </div>
+
+        <div class="result">
+          <div class="result-left">
+            <p class="result-title">Total difference</p>
+
+            <div class="diff-line" aria-live="polite">
+              <span id="diff_main" class="diff-main">--:--:--</span>
+              <span id="diff_suffix" class="diff-suffix lag-yes">ラグあり</span>
+            </div>
+
+            <div id="report_msg" class="report-msg">Over 40 minutes, report needed.</div>
+            <div id="toast" class="toast">Copied.</div>
+          </div>
+
+          <button id="copy" class="btn" type="button" disabled>Copy</button>
+        </div>
+
+        <div id="err" class="error"></div>
+
+        <div class="help">
+          <div>Tip: Use 24-hour time like <span class="kbd">17:17:17</span>. Updates as you type.</div>
+          <div>Copy format: <span class="kbd">HH:MM:SS&nbsp;&nbsp;ラグあり/なし</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="madeby">made for Kazune</div>
+
+  <script>
+    const THRESHOLD_LAG_SECONDS = 16 * 60;      // 00:16:00 => ラグあり
+    const THRESHOLD_REPORT_SECONDS = 40 * 60;   // 00:40:00 => show reminder (only when ラグあり)
+
+    const SUFFIX_YES = "  ラグあり"; // two spaces
+    const SUFFIX_NO  = "  ラグなし"; // two spaces
+
+    let currentCopyText = "";
+
+    function parseTimeToSeconds(s) {
+      const m = String(s).trim().match(/^(\d{1,2}):(\d{2}):(\d{2})$/);
+      if (!m) return null;
+      const hh = Number(m[1]), mm = Number(m[2]), ss = Number(m[3]);
+      if (!Number.isInteger(hh) || !Number.isInteger(mm) || !Number.isInteger(ss)) return null;
+      if (hh < 0 || hh > 23 || mm < 0 || mm > 59 || ss < 0 || ss > 59) return null;
+      return hh * 3600 + mm * 60 + ss;
+    }
+
+    function formatHHMMSS(totalSeconds) {
+      const h = Math.floor(totalSeconds / 3600);
+      const m = Math.floor((totalSeconds % 3600) / 60);
+      const s = totalSeconds % 60;
+      return [h, m, s].map(v => String(v).padStart(2, "0")).join(":");
+    }
+
+    async function copyToClipboard(text) {
+      if (navigator.clipboard && window.isSecureContext) {
+        await navigator.clipboard.writeText(text);
+        return;
+      }
+      const ta = document.createElement("textarea");
+      ta.value = text;
+      ta.setAttribute("readonly", "");
+      ta.style.position = "fixed";
+      ta.style.left = "-9999px";
+      document.body.appendChild(ta);
+      ta.select();
+      document.execCommand("copy");
+      document.body.removeChild(ta);
+    }
+
+    function showToast(msg = "Copied.") {
+      const toast = document.getElementById("toast");
+      toast.textContent = msg;
+      toast.style.display = "block";
+      clearTimeout(showToast._t);
+      showToast._t = setTimeout(() => toast.style.display = "none", 1100);
+    }
+
+    function setLagSuffix(isLagYes) {
+      const suffixEl = document.getElementById("diff_suffix");
+      if (isLagYes) {
+        suffixEl.textContent = "ラグあり";
+        suffixEl.className = "diff-suffix lag-yes";
+      } else {
+        suffixEl.textContent = "ラグなし";
+        suffixEl.className = "diff-suffix lag-none";
+      }
+    }
+
+    function update() {
+      const t1 = document.getElementById("t1").value;
+      const t2 = document.getElementById("t2").value;
+
+      const errEl = document.getElementById("err");
+      const diffMainEl = document.getElementById("diff_main");
+      const copyBtn = document.getElementById("copy");
+      const reportMsg = document.getElementById("report_msg");
+
+      const s1 = parseTimeToSeconds(t1);
+      const s2 = parseTimeToSeconds(t2);
+
+      errEl.style.display = "none";
+      errEl.textContent = "";
+      reportMsg.style.display = "none";
+
+      if (t1.trim() === "" && t2.trim() === "") {
+        diffMainEl.textContent = "--:--:--";
+        setLagSuffix(true);
+        currentCopyText = "";
+        copyBtn.disabled = true;
+        return;
+      }
+
+      if (s1 === null || s2 === null) {
+        diffMainEl.textContent = "--:--:--";
+        setLagSuffix(true);
+        errEl.textContent = "Please enter both times in HH:MM:SS (24-hour) format. Example: 00:00:00";
+        errEl.style.display = "block";
+        currentCopyText = "";
+        copyBtn.disabled = true;
+        return;
+      }
+
+      const diff = Math.abs(s2 - s1);
+      const main = formatHHMMSS(diff);
+      diffMainEl.textContent = main;
+
+      const isLagYes = diff >= THRESHOLD_LAG_SECONDS;
+      setLagSuffix(isLagYes);
+
+      currentCopyText = main + (isLagYes ? SUFFIX_YES : SUFFIX_NO);
+      copyBtn.disabled = false;
+
+      if (isLagYes && diff >= THRESHOLD_REPORT_SECONDS) {
+        reportMsg.style.display = "block";
+      }
+    }
+
+    document.getElementById("t1").addEventListener("input", update);
+    document.getElementById("t2").addEventListener("input", update);
+    document.getElementById("t1").addEventListener("paste", () => setTimeout(update, 0));
+    document.getElementById("t2").addEventListener("paste", () => setTimeout(update, 0));
+
+    document.getElementById("copy").addEventListener("click", async () => {
+      if (!currentCopyText) return;
+      try {
+        await copyToClipboard(currentCopyText);
+        showToast("Copied.");
+      } catch (e) {
+        showToast("Copy failed.");
+      }
+    });
+
+    update();
+  </script>
+</body>
+</html>
